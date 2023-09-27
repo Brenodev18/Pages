@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de pets</title>
+</head>
+<body>
+
+    <form style="width: 300px;">
+        <fieldset style="width: 300px;">
+            <legend>Informações do pet</legend>
+            <div style="height: 50px;">
+                <label for="nomepet">Nome</label>
+                <input type="text" name="nomepedt" id="nomepet">
+            </div>
+            <div style="height: 50px;">
+                <label for="raçapet">Raça</label>
+                <input type="text" name="raçapet" id="raçapet">
+            </div>
+            <div style="height: 50px;">    
+                <label for="tipoPetDropbox">Tipo do pet</label>
+                <select name="tipoPet" id="tipoPetDropbox">
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                </select>
+            </div>
+           
+
+        </fieldset>
+        <fieldset style="width: 300px;">
+            <legend>informações do cliente</legend>
+            <div style="height: 50px; padding: 5px;">
+                <label for="nomecliente">Nome</label>
+                <input type="text" name="nomecliente" id="nomecliente">
+            </div>
+            
+            <div style="height: 50px;">
+                <label for="telefonecliente">telefone</label>
+                <input type="tel" name="telefonecliente" id="telefonecliente">
+            </div>
+            
+            <div style="height: 50px;">
+                <label for="emailcliente">Email</label>
+                <input type="email" name="emailcliente" id="emailcliente">
+            </div>   
+        </fieldset>
+
+        <div style="height: 50px; text-align: center; padding: 5px;">
+        <input type="submit" name="enviar" id="enviar" value="enviar">
+        <input type="reset" name="limpar" id="limpar" value="limpar">
+        </div>   
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: rgb(252, 252, 252);
+            height: 100vh;
+        }
+
+        header{
+            background-color: red;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav{
+            width: 250px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        aside{
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start
+        }
+        aside a{
+            margin: 20px;
+        }
+        article{
+            background-color: blanchedalmond;
+            display: flex;
+            height: 85vh;
+        }
+        footer{
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a>HOME</a>
+            </div>
+                <nav>
+                    <a href="">sobre</a>
+                    <a href="">produtos</a>
+                    <a href="">contatos</a>
+                </nav>
+        </header>
+        <div class="row">
+            <aside>
+                <a href="">sobre</a>
+                <a href="">produtos</a>
+                <a href="">contatos</a>
+            </aside>
+                <article>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente ipsam quibusdam, neque architecto eaque unde, temporibus dicta obcaecati pariatur corrupti eveniet sint aliquid facere. Repellat distinctio fugiat perferendis ullam mollitia. <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum amet qui ipsum error, optio, odit sequi autem nesciunt id modi iusto facere quas ducimus fugit laudantium quos. Commodi, repudiandae! <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolor earum laborum necessitatibus illum impedit aperiam adipisci labore aut deserunt. Odio architecto eum assumenda officiis perferendis. Et maxime vero sapiente. <br><br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dolorum architecto, mollitia vitae blanditiis officiis fugit facere expedita, maxime tempore sunt inventore deleniti neque fugiat placeat, quia repudiandae consectetur non. <br><br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, sequi? Dolor dolorum, temporibus laborum deleniti architecto quos eos iusto voluptatem esse expedita earum neque sed quam voluptas, voluptatum nostrum aliquam! <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit eum recusandae, aut itaque quam, fugiat beatae deserunt consequatur doloremque ab nisi deleniti asperiores, libero similique. Explicabo, officiis eum. Maiores.
+                    </p>
+                </article>
+        </div>
+
+        
+            <footer>
+                <p>@ 2023 Todos os direitos reservados</p>
+            </footer>
+     </div>
+</body>
+</html>

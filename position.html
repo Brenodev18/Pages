@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Position</title>
+    <style>
+        :root{
+            --verde-escuro: #557B85;
+            --verde-agua: #39aea9;
+            --verde-claro: #A2D5Ab;
+            --amarelo: #e5efc1;
+        }
+
+        body{
+            height: 1000px;
+        }
+        .fixed{
+            position: fixed;
+            width: 150px;
+            height: 150px;
+            background-color: var(--verde-escuro);
+        }
+
+        .absolute{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: var(--verde-agua);
+            left: 65%;
+            top: 65%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+        .relative{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: bisque;
+            left: 40%;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="fixed">
+            FIXED
+        </div>
+        
+        <div class="relative">
+            <div class="absolute">
+                ABSOLUTE
+            </div>
+        </div> 
+    </body>
+</html>
